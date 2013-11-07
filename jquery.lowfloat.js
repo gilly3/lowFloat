@@ -1,7 +1,7 @@
 $.fn.lowFloat = function(options){
     var opts = $.extend({}, $.fn.lowFloat.defaultOptions, options);
     this.each(function(){
-        var container = opts.closest ? $(this).closest(opts.closest) : $(this).parent();
+        var container = $(this).parent().closest(opts.closest);
         container.prepend(this);
         $(this).css({ float: opts.float, clear: opts.float });
         $("<div>").css({ width: 0, float: opts.float }).insertBefore(this);
@@ -26,6 +26,6 @@ $.fn.lowFloat = function(options){
     }).trigger("resize");
 };
 $.fn.lowFloat.defaultOptions = {
-    closest: null,
+    closest: "*",
     float: "right"
 };
