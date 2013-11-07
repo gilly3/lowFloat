@@ -24,6 +24,7 @@ $.fn.lowFloat = function(options){
             }
         });
     }).trigger("resize");
+    return this;
 };
 $.fn.lowFloat.defaultOptions = {
     closest: "*",
