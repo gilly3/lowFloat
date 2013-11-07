@@ -28,7 +28,7 @@
                 var floater = $(this);
                 var spacer = floater.prev();
                 var container = floater.parent();
-                var lastContent = container.children().last();
+                var lastContent = container.find(opts.bottomContent);
                 var floaterHeight = this.offsetHeight;
                 var h = Math.max(0, container.height() - floaterHeight);
                 spacer.height(h);
@@ -44,6 +44,7 @@
     };
     $.fn.lowFloat.defaultOptions = {
         closest: "*",
+        bottomContent: "> :last-child",
         float: "right"
     };
 })(jQuery);
