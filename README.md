@@ -32,7 +32,7 @@ Options
 Name | Type | Default | Description
 ---|---|---|---
 `float` | string | `"right"` | `"left"` or `"right"` - corresponds to CSS `float` and `clear` properties
-`closest` | string | `"*"` (the immediate parent) | Selector for the container element for the content - Set this option if your floating element is not a direct child of the content container. The floating element will be prepended to the container element.  The floating element must be a descendant of the container element.
+`container` | string | `"*"` (the immediate parent) | Selector for the container element for the content.  The container element is found by passing this selector to `.closest()` for the matched element (Actually `$(this).parent().closest(options.container)`). Set this option if your floating element is not a direct child of the content container (the floating element must be a descendant of the container element). The floating element will be prepended to the container element.
 `bottomContent` | string | `"> :last-child"` (the last child of container) | Selector for the element that the floating element will line up next to. This must be a descendant of the container. The bottom of the floating element will line up with the bottom of the element that matches this selector. This allows you greater control over the positioning of your floated element.
 
 See [this stackoverflow.com question for background](http://stackoverflow.com/a/19820608/361684)

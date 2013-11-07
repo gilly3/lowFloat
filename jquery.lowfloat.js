@@ -17,7 +17,7 @@
     $.fn.lowFloat = function (options) {
         var opts = $.extend({}, $.fn.lowFloat.defaultOptions, options);
         this.each(function () {
-            var container = $(this).parent().closest(opts.closest);
+            var container = $(this).parent().closest(opts.container);
             container.prepend(this);
             $(this).css({ float: opts.float, clear: opts.float });
             $("<div>").css({ width: 0, float: opts.float }).insertBefore(this);
@@ -43,7 +43,7 @@
         return this;
     };
     $.fn.lowFloat.defaultOptions = {
-        closest: "*",
+        container: "*",
         bottomContent: "> :last-child",
         float: "right"
     };
