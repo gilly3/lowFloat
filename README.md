@@ -6,7 +6,11 @@ A jQuery plugin for floating an element at the bottom left or bottom right corne
 Usage
 =====
 
-Include jquery.lowfloat.js on your page after jQuery has been loaded.  Then, call the `lowFloat()` method on a jQuery object containing the element(s) you want to have floated.  The selected elements will display at the bottom right corner of the parent element.
+````javascript
+.lowFloat([options]);
+````
+
+Include jquery.lowfloat.js on your page (after jQuery).  Call the `lowFloat()` method on a jQuery object containing the element(s) you want to have floated.  Each selected element will display at the bottom right corner of its parent element.
 
 ````javascript
 $(".bottomRight").lowFloat();
@@ -28,4 +32,6 @@ Options
 Name | Type | Default | Description
 ---|---|---|---
 `float` | string | `"right"` | `"left"` or `"right"` - corresponds to CSS `float` and `clear` properties
-`closest` | string | `"*"` | Selector for the container element for the content - Set this option if your floating element is not a direct child of the content container. The floating element will be prepended to the container element.  The floating element must be a descendant of the container element.
+`closest` | string | `"*"` (the immediate parent) | Selector for the container element for the content - Set this option if your floating element is not a direct child of the content container. The floating element will be prepended to the container element.  The floating element must be a descendant of the container element.
+
+See [this stackoverflow.com question for background](http://stackoverflow.com/a/19820608/361684)
