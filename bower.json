@@ -1,0 +1,19 @@
+{
+    "name": "lowfloat",
+    "main": "jquery.lowfloat.js,
+    "version": "1",
+    "homepage": "https://github.com/gilly3/lowFloat",
+    "authors": [
+        "Ivan Gilchrist"
+    ],
+    "description": "Float an element to the bottom left or right corner of some content, with text and other content wrapping around it.",
+    "keywords": [
+        "float",
+        "layout",
+        "jquery"
+    ],
+    "license": "Apache-2.0",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
