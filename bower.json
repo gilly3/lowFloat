@@ -1,6 +1,6 @@
 {
     "name": "lowfloat",
-    "main": "jquery.lowfloat.js,
+    "main": "jquery.lowfloat.js",
     "version": "1.0.0",
     "homepage": "https://github.com/gilly3/lowFloat",
     "authors": [
