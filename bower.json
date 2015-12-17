@@ -1,7 +1,7 @@
 {
     "name": "lowfloat",
     "main": "jquery.lowfloat.js",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "homepage": "https://github.com/gilly3/lowFloat",
     "authors": [
         "Ivan Gilchrist"
@@ -15,5 +15,10 @@
     "license": "Apache-2.0",
     "dependencies": {
         "jquery": ">=1.7"
-    }
+    },
+    "ignore": [
+        "*.md",
+        "*.png",
+        ".gitignore"
+    ]
 }
